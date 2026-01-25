@@ -1,3 +1,12 @@
 .gradient{
 -fx-background-color:linear-gradient(to bottom right,#935019,#57351b)
 }
+.label-head{
+  -fx-border-color:#57351b;
+  -fx-border-width:0 0 0 5px;
+  -fx-padding:0 0 0 5px;
+}
+.button-login{
+-fx-background-color:linear-gradient(to bottom right,#935019,#965d2e)
+
+}
