@@ -10,6 +10,7 @@ module com.example.cafi {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.desktop;
 
     // هاد السطر هو اللي كان ناقص باش Scene Builder يخدم مزيان [cite: 2025-12-30]
     opens control to javafx.fxml;
