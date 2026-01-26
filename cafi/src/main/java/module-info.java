@@ -2,6 +2,7 @@ module com.example.cafi {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
+    requires javafx.graphics; // ضرورية باش Stage يخدم [cite: 2025-12-30]
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
@@ -10,11 +11,12 @@ module com.example.cafi {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
-    requires java.desktop;
 
-    // هاد السطر هو اللي كان ناقص باش Scene Builder يخدم مزيان [cite: 2025-12-30]
+    // هادو هما الساروت ديال المشكل: [cite: 2025-12-30]
+    opens Main to javafx.graphics, javafx.fxml;
     opens control to javafx.fxml;
+    opens view to javafx.fxml;
 
-    opens com.example.cafi to javafx.fxml;
     exports com.example.cafi;
+    exports Main; // خاصنا نديرو Export للباكيج اللي فيه كلاس المشغل [cite: 2025-12-30]
 }
