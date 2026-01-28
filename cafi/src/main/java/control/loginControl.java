@@ -36,12 +36,15 @@ public class loginControl implements Initializable {
     public void switchform(ActionEvent e){
         TranslateTransition slider=new TranslateTransition();
         if(e.getSource()==sidecreatacount){
+            loginform.setVisible(false);
             slider.setNode(sideform);
             slider.setToX(300);
             slider.setDuration(Duration.seconds(.5));
             slider.setOnFinished((ActionEvent event)->{
                 alreadyhave.setVisible(true);
                 sidecreatacount.setVisible(false);
+                signUpform.setVisible(true);
+
             });
             slider.play();
         }
