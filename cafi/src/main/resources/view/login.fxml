@@ -64,7 +64,6 @@
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Button>
-                  <Hyperlink layoutX="38.0" layoutY="254.0" text="forgot password?" />
                   <PasswordField layoutX="46.0" layoutY="215.0" prefHeight="31.0" prefWidth="222.0" promptText="conferme password" stylesheets="@style.css" />
                </children>
             </AnchorPane>
