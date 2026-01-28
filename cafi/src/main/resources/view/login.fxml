@@ -8,7 +8,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.loginControl">
    <children>
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
@@ -31,7 +30,7 @@
                         <Font name="System Bold" size="22.0" />
                      </font>
                   </Text>
-                  <Button fx:id="alreadyhave" layoutX="45.0" layoutY="339.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="222.0" styleClass="button-create" stylesheets="@style.css" text="Already have Accont" textFill="WHITE" visible="false" />
+                  <Button fx:id="alreadyhave" layoutX="45.0" layoutY="339.0" mnemonicParsing="false" onAction="#switchform" prefHeight="41.0" prefWidth="222.0" styleClass="button-create" stylesheets="@style.css" text="Already have Accont" textFill="WHITE" visible="false" />
                </children>
             </AnchorPane>
             <AnchorPane fx:id="loginform" layoutX="294.0" layoutY="5.0" prefHeight="400.0" prefWidth="300.0">

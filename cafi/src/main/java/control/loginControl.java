@@ -47,6 +47,18 @@ public class loginControl implements Initializable {
 
             });
             slider.play();
+        } else if (e.getSource()==alreadyhave) {
+            TranslateTransition slide=new TranslateTransition();
+            slide.setNode(sideform);
+            signUpform.setVisible(false);
+            slide.setToX(0);
+            slide.setDuration(Duration.seconds(.5));
+            slide.setOnFinished((ActionEvent ev)->{
+                alreadyhave.setVisible(false);
+                sidecreatacount.setVisible(true);
+                loginform.setVisible(true);
+            });
+            slide.play();
         }
     }
 
