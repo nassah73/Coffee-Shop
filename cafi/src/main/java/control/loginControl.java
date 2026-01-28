@@ -3,6 +3,7 @@ package control; // تأكدي بلي هاد المسار هو اللي عندك
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -14,6 +15,12 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class loginControl implements Initializable {
+    @FXML
+    private PasswordField su_password;
+    @FXML
+    private PasswordField su_passwordAgain;
+    @FXML
+    private TextField su_userName;
 
     @FXML
     private AnchorPane signUpform, sideform, loginform;
@@ -32,6 +39,28 @@ public class loginControl implements Initializable {
     @FXML
     void handleLogin(ActionEvent event) {
 
+    }
+    private Alert alert;
+    public void signUp(){
+        if (su_password.getText().isEmpty()|| su_userName.getText().isEmpty()|| su_passwordAgain.getText().isEmpty()){
+            alert=new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error message");
+            alert.setHeaderText(null);
+            alert.setContentText("رجاء املأ جميع الحقول ");
+            alert.showAndWait();
+        } else if (!su_password.getText().trim().equalsIgnoreCase(su_passwordAgain.getText().trim())) {
+            alert=new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error message");
+            alert.setHeaderText(null);
+            alert.setContentText("كلمات السر غير متطبقتان");
+            alert.showAndWait();
+        }else{
+            alert=new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle(" message");
+            alert.setHeaderText(null);
+            alert.setContentText("every think is ok");
+            alert.showAndWait();
+        }
     }
     public void switchform(ActionEvent e){
         TranslateTransition slider=new TranslateTransition();
