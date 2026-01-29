@@ -61,6 +61,7 @@ public class loginControl implements Initializable {
             alert.setContentText("every think is ok");
             alert.showAndWait();
             su_password.setText("");
+            su_userName.setText("");
         }
     }
     public void switchform(ActionEvent e){
