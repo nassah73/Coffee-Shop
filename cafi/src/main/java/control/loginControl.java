@@ -62,6 +62,7 @@ public class loginControl implements Initializable {
             alert.showAndWait();
             su_password.setText("");
             su_userName.setText("");
+            su_passwordAgain.setText("");
         }
     }
     public void switchform(ActionEvent e){
