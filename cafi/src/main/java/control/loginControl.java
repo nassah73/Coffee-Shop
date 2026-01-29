@@ -60,6 +60,7 @@ public class loginControl implements Initializable {
             alert.setHeaderText(null);
             alert.setContentText("every think is ok");
             alert.showAndWait();
+            su_password.setText("");
         }
     }
     public void switchform(ActionEvent e){
