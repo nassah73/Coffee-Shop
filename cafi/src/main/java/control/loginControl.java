@@ -89,6 +89,9 @@ public class loginControl implements Initializable {
                 alreadyhave.setVisible(false);
                 sidecreatacount.setVisible(true);
                 loginform.setVisible(true);
+                su_password.setText("");
+                su_userName.setText("");
+                su_passwordAgain.setText("");
             });
             slide.play();
         }
