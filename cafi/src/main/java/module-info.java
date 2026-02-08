@@ -11,6 +11,7 @@ module com.example.cafi {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
     // هادو هما الساروت ديال المشكل: [cite: 2025-12-30]
     opens Main to javafx.graphics, javafx.fxml;
