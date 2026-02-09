@@ -8,8 +8,8 @@ public class Dbconnection {
       public static String url="jdbc:mysql://localhost:3306/cliente";
      public static Connection getconnection(){
          try{
-             return  DriverManager.getConnection(url,"root" ,"Hassan@12");
-
+             Connection conne = DriverManager.getConnection(url,"root" ,"Hassan@12");
+return  conne;
          } catch (SQLException e) {
              throw new RuntimeException(e);
 

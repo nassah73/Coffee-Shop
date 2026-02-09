@@ -1,5 +1,6 @@
 package control; // تأكدي بلي هاد المسار هو اللي عندك [cite: 2025-12-30]
 
+import dao.logic;
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -12,6 +13,7 @@ import javafx.event.ActionEvent;
 import javafx.util.Duration;
 
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class loginControl implements Initializable {
@@ -41,7 +43,7 @@ public class loginControl implements Initializable {
 
     }
     private Alert alert;
-    public void signUp(){
+    public void signUp() throws SQLException {
         if (su_password.getText().isEmpty()|| su_userName.getText().isEmpty()|| su_passwordAgain.getText().isEmpty()){
             alert=new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error message");
@@ -60,6 +62,19 @@ public class loginControl implements Initializable {
             alert.setHeaderText(null);
             alert.setContentText("every think is ok");
             alert.showAndWait();
+            String password=su_password.getText().trim();
+            String confirme=su_password.getText().trim();
+            String username=su_password.getText().trim();
+            if (!username.isEmpty()){
+                String[]part=username.split(" ");
+                if(part.length>=2){
+                   String firstname=part[0];
+                    String lastname=part[0];
+                    client cl=new client(firstname,lastname,password,confirme);
+                    logic.insert(cl);
+                }
+
+            }
             su_password.setText("");
             su_userName.setText("");
             su_passwordAgain.setText("");
