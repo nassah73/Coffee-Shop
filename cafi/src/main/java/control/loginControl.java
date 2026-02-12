@@ -63,8 +63,8 @@ public class loginControl implements Initializable {
             alert.setContentText("every think is ok");
             alert.showAndWait();
             String password=su_password.getText().trim();
-            String confirme=su_password.getText().trim();
-            String username=su_password.getText().trim();
+            String confirme=su_passwordAgain.getText().trim();
+            String username=su_userName.getText().trim();
             if (!username.isEmpty()){
                 String[]part=username.split(" ");
                 if(part.length>=2){
