@@ -82,10 +82,11 @@ public class loginControl implements Initializable {
                     System.out.println("❌erreur");
                 }
             }
-            su_password.setText("");
-            su_userName.setText("");
-            su_passwordAgain.setText("");
+
         }
+        su_password.setText("");
+        su_userName.setText("");
+        su_passwordAgain.setText("");
     }
     public void switchform(ActionEvent e){
         TranslateTransition slider=new TranslateTransition();
