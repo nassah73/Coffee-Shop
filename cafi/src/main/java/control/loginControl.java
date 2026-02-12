@@ -62,18 +62,25 @@ public class loginControl implements Initializable {
             alert.setHeaderText(null);
             alert.setContentText("every think is ok");
             alert.showAndWait();
-            String password=su_password.getText().trim();
-            String confirme=su_passwordAgain.getText().trim();
-            String username=su_userName.getText().trim();
-            if (!username.isEmpty()){
-                String[]part=username.split(" ");
-                if(part.length>=2){
-                   String firstname=part[0];
-                    String lastname=part[0];
-                    client cl=new client(firstname,lastname,password,confirme);
-                    logic.insert(cl);
-                }
 
+
+            String passValue = su_password.getText().trim();
+            String confirmValue = su_passwordAgain.getText().trim();
+            String fullUserName = su_userName.getText().trim(); // هنا استعمل su_userName ماشي su_password
+
+            if (!fullUserName.isEmpty()) {
+                String[] part = fullUserName.split(" ");
+                if (part.length >= 2) {
+                    String firstname = part[0];
+                    String lastname = part[1];
+
+                    client cl = new client(firstname, lastname, passValue, confirmValue);
+                    logic.insert(cl); // دابا هادي غتخدم!
+
+                    System.out.println("✅ tt va bien");
+                } else {
+                    System.out.println("❌erreur");
+                }
             }
             su_password.setText("");
             su_userName.setText("");
