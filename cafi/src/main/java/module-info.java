@@ -18,6 +18,6 @@ module com.example.cafi {
     opens control to javafx.fxml;
     opens view to javafx.fxml;
 
-    exports com.example.cafi;
+//exports com.example.cafi;
     exports Main; // خاصنا نديرو Export للباكيج اللي فيه كلاس المشغل [cite: 2025-12-30]
 }

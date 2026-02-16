@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -8,66 +9,74 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.loginControl">
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.loginControl">
    <children>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <AnchorPane fx:id="sideform" prefHeight="403.0" prefWidth="300.0" styleClass="gradient" stylesheets="@style.css">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" StackPane.alignment="CENTER">
                <children>
-                  <Button fx:id="sidecreatacount" layoutX="45.0" layoutY="339.0" mnemonicParsing="false" onAction="#switchform" prefHeight="41.0" prefWidth="222.0" styleClass="button-create" stylesheets="@style.css" text="create new Accont" textFill="WHITE" />
-                  <Label layoutX="102.0" layoutY="297.0" text="create Accont" textFill="#fcf8f8">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="73.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@710116.png" />
-                     </image>
-                  </ImageView>
-                  <Text layoutX="85.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cafe shop">
-                     <font>
-                        <Font name="System Bold" size="22.0" />
-                     </font>
-                  </Text>
-                  <Button fx:id="alreadyhave" layoutX="45.0" layoutY="339.0" mnemonicParsing="false" onAction="#switchform" prefHeight="41.0" prefWidth="222.0" styleClass="button-create" stylesheets="@style.css" text="Already have Accont" textFill="WHITE" visible="false" />
+                  <AnchorPane fx:id="sideform" prefHeight="407.0" prefWidth="300.0" styleClass="gradient" stylesheets="@style.css">
+                     <children>
+                        <Button fx:id="sidecreatacount" layoutX="45.0" layoutY="339.0" mnemonicParsing="false" onAction="#switchform" prefHeight="41.0" prefWidth="222.0" styleClass="button-create" stylesheets="@style.css" text="create new Accont" textFill="WHITE" />
+                        <Label layoutX="102.0" layoutY="297.0" text="create Accont" textFill="#fcf8f8">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="73.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@710116.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="85.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cafe shop">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="alreadyhave" layoutX="45.0" layoutY="339.0" mnemonicParsing="false" onAction="#switchform" prefHeight="41.0" prefWidth="222.0" styleClass="button-create" stylesheets="@style.css" text="Already have Accont" textFill="WHITE" visible="false" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="loginform" layoutX="294.0" layoutY="5.0" prefHeight="400.0" prefWidth="300.0">
+                     <children>
+                        <Label layoutX="47.0" layoutY="81.0" styleClass="label-head" stylesheets="@style.css" text="Login Account" textFill="#57351b">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="username" layoutX="46.0" layoutY="136.0" prefHeight="25.0" prefWidth="222.0" promptText="username" stylesheets="@style.css" />
+                        <PasswordField fx:id="password" layoutX="46.0" layoutY="185.0" prefHeight="31.0" prefWidth="222.0" promptText="password" stylesheets="@style.css" />
+                        <Button fx:id="loginbtn" layoutX="46.0" layoutY="258.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="222.0" styleClass="button-login" stylesheets="@style.css" text="login" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                        <Hyperlink layoutX="47.0" layoutY="223.0" text="forgot password?" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="signUpform" layoutY="7.0" prefHeight="400.0" prefWidth="300.0" visible="false">
+                     <children>
+                        <Label layoutX="47.0" layoutY="81.0" styleClass="label-head" stylesheets="@style.css" text="regester Accont" textFill="#57351b">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="su_userName" layoutX="46.0" layoutY="136.0" prefHeight="25.0" prefWidth="222.0" promptText="username" stylesheets="@style.css" />
+                        <PasswordField fx:id="su_password" layoutX="46.0" layoutY="176.0" prefHeight="31.0" prefWidth="222.0" promptText="password" stylesheets="@style.css" />
+                        <Button fx:id="signUpBtn" layoutX="39.0" layoutY="296.0" mnemonicParsing="false" onAction="#signUp" prefHeight="41.0" prefWidth="222.0" styleClass="button-login" stylesheets="@style.css" text="signUp" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                        <PasswordField fx:id="su_passwordAgain" layoutX="46.0" layoutY="215.0" prefHeight="31.0" prefWidth="222.0" promptText="conferme password" stylesheets="@style.css" />
+                     </children>
+                  </AnchorPane>
                </children>
-            </AnchorPane>
-            <AnchorPane fx:id="loginform" layoutX="294.0" layoutY="5.0" prefHeight="400.0" prefWidth="300.0">
-               <children>
-                  <Label layoutX="47.0" layoutY="81.0" styleClass="label-head" stylesheets="@style.css" text="Login Account" textFill="#57351b">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="username" layoutX="46.0" layoutY="136.0" prefHeight="25.0" prefWidth="222.0" promptText="username" stylesheets="@style.css" />
-                  <PasswordField fx:id="password" layoutX="46.0" layoutY="185.0" prefHeight="31.0" prefWidth="222.0" promptText="password" stylesheets="@style.css" />
-                  <Button fx:id="loginbtn" layoutX="46.0" layoutY="258.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="222.0" styleClass="button-login" stylesheets="@style.css" text="login" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="17.0" />
-                     </font>
-                  </Button>
-                  <Hyperlink layoutX="47.0" layoutY="223.0" text="forgot password?" />
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="signUpform" layoutY="7.0" prefHeight="400.0" prefWidth="300.0" visible="false">
-               <children>
-                  <Label layoutX="47.0" layoutY="81.0" styleClass="label-head" stylesheets="@style.css" text="regester Accont" textFill="#57351b">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </Label>
-                  <TextField fx:id="su_userName" layoutX="46.0" layoutY="136.0" prefHeight="25.0" prefWidth="222.0" promptText="username" stylesheets="@style.css" />
-                  <PasswordField fx:id="su_password" layoutX="46.0" layoutY="176.0" prefHeight="31.0" prefWidth="222.0" promptText="password" stylesheets="@style.css" />
-                  <Button fx:id="signUpBtn" layoutX="39.0" layoutY="296.0" mnemonicParsing="false" onAction="#signUp" prefHeight="41.0" prefWidth="222.0" styleClass="button-login" stylesheets="@style.css" text="signUp" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="17.0" />
-                     </font>
-                  </Button>
-                  <PasswordField fx:id="su_passwordAgain" layoutX="46.0" layoutY="215.0" prefHeight="31.0" prefWidth="222.0" promptText="conferme password" stylesheets="@style.css" />
-               </children>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
             </AnchorPane>
          </children>
-      </AnchorPane>
+      </StackPane>
    </children>
-</StackPane>
+</AnchorPane>
