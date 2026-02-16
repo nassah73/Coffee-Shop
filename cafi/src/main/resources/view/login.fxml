@@ -9,12 +9,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.loginControl">
    <children>
+      <ImageView opacity="0.2" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@Coffee%20cup%20and%20coffee%20beans%20on%20table%20by%20Portumen%20via%20Shutterstock.jpg" />
+         </image>
+      </ImageView>
       <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0" StackPane.alignment="CENTER">
+            <AnchorPane maxHeight="407.0" maxWidth="600.0" prefHeight="800.0" prefWidth="800.0" StackPane.alignment="CENTER">
                <children>
                   <AnchorPane fx:id="sideform" prefHeight="407.0" prefWidth="300.0" styleClass="gradient" stylesheets="@style.css">
                      <children>
