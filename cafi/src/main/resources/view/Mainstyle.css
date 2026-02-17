@@ -2,6 +2,14 @@
 -fx-background-color:linear-gradient(to bottom right,#935019,#57351b)
 }
 .nav-form{
- -fx-background-color:linear-gradient(to bottom right,#eec77b,#eec77b)
-
+ -fx-background-color:transparent;
+  -fx-border-color:#46361a;
+  -fx-border-width:1px;
+  -fx-cursor:hand;
+  -fx-text-fill:#ffffff;
+  -fx-font-size:14px;
+}
+.nav-form:hover{
+    -fx-background-color:#b5640f;
+    
 }
