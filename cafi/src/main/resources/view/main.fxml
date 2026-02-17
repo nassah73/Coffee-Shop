@@ -19,7 +19,7 @@
                            <children>
                               <AnchorPane layoutX="-2.0" prefHeight="60.0" prefWidth="184.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                  <children>
-                                    <Label layoutX="-2.0" layoutY="1.0" prefHeight="61.0" prefWidth="192.0" styleClass="nav-form" stylesheets="@Mainstyle.css" text="cafe shop management System">
+                                    <Label layoutX="-2.0" layoutY="1.0" prefHeight="61.0" prefWidth="192.0" styleClass="nav-form" stylesheets="@Mainstyle.css" text="cafe shop management System" textFill="#b5640f">
                                        <font>
                                           <Font name="System Bold" size="13.0" />
                                        </font>
@@ -32,10 +32,7 @@
                               <Button layoutX="1.0" layoutY="196.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="187.0" styleClass="nav-form" stylesheets="@Mainstyle.css" text="INVENTORY" />
                               <Button layoutX="2.0" layoutY="296.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="187.0" styleClass="nav-form" stylesheets="@Mainstyle.css" text="CUSTOMERS" />
                               <Button layoutX="1.0" layoutY="248.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="187.0" styleClass="nav-form" stylesheets="@Mainstyle.css" text="MENU" />
-                               <Button mnemonicParsing="false" text="EXITE"
-                                       AnchorPane.bottomAnchor="10.0"
-                                       AnchorPane.leftAnchor="10.0"
-                                       AnchorPane.rightAnchor="10.0"/>
+                               <Button mnemonicParsing="false" styleClass="nav-form" text="EXITE" textFill="#46361a" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
 
                            </children>
                         </AnchorPane>
@@ -43,7 +40,25 @@
                   </AnchorPane>
                </left>
                <center>
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="106.0" layoutY="133.0" prefHeight="600.0" prefWidth="611.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="4.0" layoutY="7.0" prefHeight="200.0" prefWidth="604.0" stylesheets="@Mainstyle.css">
+                                 <styleClass>
+                                    <String fx:value="white-pg" />
+                                    <String fx:value="background-radius" />
+                                 </styleClass>
+                              </AnchorPane>
+                              <AnchorPane layoutX="8.0" layoutY="226.0" prefHeight="374.0" prefWidth="596.0" stylesheets="@Mainstyle.css">
+                                 <styleClass>
+                                    <String fx:value="white-pg" />
+                                    <String fx:value="background-radius" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
                </center>
             </BorderPane>
          </children>

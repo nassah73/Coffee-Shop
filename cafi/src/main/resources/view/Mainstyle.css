@@ -1,5 +1,5 @@
 .header{
--fx-background-color:linear-gradient(to bottom right,#935019,#57351b)
+-fx-background-color:linear-gradient(to bottom right,#935019,#57351b);
 }
 .nav-form{
  -fx-background-color:transparent;
@@ -11,5 +11,14 @@
 }
 .nav-form:hover{
     -fx-background-color:#b5640f;
-    
+
+}
+.white-pg{
+  -fx-background-color:white;
+}
+.background-radius{
+-fx-background-radius:6px;
+ -fx-border-radius:20px;
+ -fx-border-color:black;
+ -fx-border-width:2px;
 }
