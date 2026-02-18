@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -57,6 +58,19 @@
                                                 <String fx:value="border-red" />
                                                 <String fx:value="white-pg" />
                                              </styleClass>
+                                             <children>
+                                                <AnchorPane layoutX="10.0" layoutY="4.0" prefHeight="165.0" prefWidth="244.0" styleClass="header">
+                                                   <children>
+                                                      <ImageView fitHeight="89.0" fitWidth="113.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@images-removebg-preview.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <Label layoutX="101.0" layoutY="118.0" text="number of customer" textFill="WHITE" />
+                                                      <Label layoutX="212.0" layoutY="19.0" prefHeight="21.0" prefWidth="31.0" text="0" textFill="#eeeaea" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
                                           </AnchorPane>
                                        </content>
                                        <styleClass>
