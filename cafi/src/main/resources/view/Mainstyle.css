@@ -18,7 +18,11 @@
 }
 .background-radius{
 -fx-background-radius:6px;
- -fx-border-radius:20px;
+ -fx-border-radius:8px;
  -fx-border-color:black;
  -fx-border-width:2px;
+}
+.border-red{
+  -fx-background-radius:20px;
+   -fx-border-radius:20px;
 }

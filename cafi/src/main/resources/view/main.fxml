@@ -49,6 +49,22 @@
                                     <String fx:value="white-pg" />
                                     <String fx:value="background-radius" />
                                  </styleClass>
+                                 <children>
+                                    <ScrollPane layoutX="202.0" prefHeight="200.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <content>
+                                          <AnchorPane prefHeight="190.0" prefWidth="1335.0">
+                                             <styleClass>
+                                                <String fx:value="border-red" />
+                                                <String fx:value="white-pg" />
+                                             </styleClass>
+                                          </AnchorPane>
+                                       </content>
+                                       <styleClass>
+                                          <String fx:value="border-red" />
+                                          <String fx:value="white-pg" />
+                                       </styleClass>
+                                    </ScrollPane>
+                                 </children>
                               </AnchorPane>
                               <AnchorPane layoutX="8.0" layoutY="226.0" prefHeight="374.0" prefWidth="596.0" stylesheets="@Mainstyle.css">
                                  <styleClass>
