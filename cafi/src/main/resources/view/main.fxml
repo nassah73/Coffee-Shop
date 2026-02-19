@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -59,28 +60,57 @@
                                                 <String fx:value="white-pg" />
                                              </styleClass>
                                              <children>
-                                                <AnchorPane layoutX="10.0" layoutY="4.0" prefHeight="165.0" prefWidth="244.0" styleClass="header">
+                                                <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
                                                    <children>
-                                                      <ImageView fitHeight="89.0" fitWidth="113.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
-                                                         <image>
-                                                            <Image url="@images-removebg-preview.png" />
-                                                         </image>
-                                                      </ImageView>
-                                                      <Label layoutX="101.0" layoutY="118.0" text="number of customer" textFill="WHITE" />
-                                                      <Label layoutX="212.0" layoutY="19.0" prefHeight="21.0" prefWidth="31.0" text="0" textFill="#eeeaea" />
+                                                      <AnchorPane prefHeight="165.0" prefWidth="244.0" styleClass="header" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <ImageView fitHeight="89.0" fitWidth="113.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@images-removebg-preview.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label layoutX="101.0" layoutY="118.0" text="number of customer" textFill="WHITE" />
+                                                            <Label layoutX="212.0" layoutY="19.0" prefHeight="21.0" prefWidth="31.0" text="0" textFill="#eeeaea" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane prefHeight="165.0" prefWidth="244.0" styleClass="header" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <ImageView fitHeight="89.0" fitWidth="113.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@images-removebg-preview.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label layoutX="101.0" layoutY="118.0" text="number of customer" textFill="WHITE" />
+                                                            <Label layoutX="212.0" layoutY="19.0" prefHeight="21.0" prefWidth="31.0" text="0" textFill="#eeeaea" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane prefHeight="165.0" prefWidth="244.0" styleClass="header" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <ImageView fitHeight="89.0" fitWidth="113.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@images-removebg-preview.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label layoutX="101.0" layoutY="118.0" text="number of customer" textFill="WHITE" />
+                                                            <Label layoutX="212.0" layoutY="19.0" prefHeight="21.0" prefWidth="31.0" text="0" textFill="#eeeaea" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                      <AnchorPane prefHeight="165.0" prefWidth="244.0" styleClass="header" HBox.hgrow="ALWAYS">
+                                                         <children>
+                                                            <ImageView fitHeight="89.0" fitWidth="113.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                                                               <image>
+                                                                  <Image url="@images-removebg-preview.png" />
+                                                               </image>
+                                                            </ImageView>
+                                                            <Label layoutX="101.0" layoutY="118.0" text="number of customer" textFill="WHITE" />
+                                                            <Label layoutX="212.0" layoutY="19.0" prefHeight="21.0" prefWidth="31.0" text="0" textFill="#eeeaea" />
+                                                         </children>
+                                                      </AnchorPane>
                                                    </children>
-                                                </AnchorPane>
-                                                <AnchorPane layoutX="275.0" layoutY="4.0" prefHeight="165.0" prefWidth="244.0" styleClass="header">
-                                                   <children>
-                                                      <ImageView fitHeight="89.0" fitWidth="113.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
-                                                         <image>
-                                                            <Image url="@images-removebg-preview.png" />
-                                                         </image>
-                                                      </ImageView>
-                                                      <Label layoutX="101.0" layoutY="118.0" text="number of customer" textFill="WHITE" />
-                                                      <Label layoutX="212.0" layoutY="19.0" prefHeight="21.0" prefWidth="31.0" text="0" textFill="#eeeaea" />
-                                                   </children>
-                                                </AnchorPane>
+                                                   <padding>
+                                                      <Insets bottom="20.0" left="5.0" top="5.0" />
+                                                   </padding>
+                                                </HBox>
                                              </children>
                                           </AnchorPane>
                                        </content>
