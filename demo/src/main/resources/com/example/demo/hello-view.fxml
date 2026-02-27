@@ -139,11 +139,21 @@
                                        </GridPane.margin>
                                        <children>
                                           <FontAwesomeIconView fill="#f2efef" glyphName="CALENDAR_ALT" layoutX="86.0" layoutY="37.0" size="24" />
+                                          <Label layoutX="70.0" layoutY="50.0" prefHeight="27.0" prefWidth="65.0" text="users" textFill="#faf8f8">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
                                        </children>
                                     </AnchorPane>
                                     <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="138.0" prefWidth="168.0" style="-fx-background-color: #177bfc;" styleClass="main-content" GridPane.columnIndex="2">
                                        <children>
                                           <FontAwesomeIconView fill="#faf7f7" glyphName="SHARE_ALT" layoutX="86.0" layoutY="37.0" size="24" />
+                                          <Label layoutX="70.0" layoutY="50.0" prefHeight="27.0" prefWidth="65.0" text="users" textFill="#faf8f8">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
                                        </children>
                                        <GridPane.margin>
                                           <Insets top="5.0" />
@@ -152,6 +162,11 @@
                                     <AnchorPane layoutX="248.0" layoutY="10.0" prefHeight="138.0" prefWidth="168.0" style="-fx-background-color: #177bfc;" styleClass="main-content" GridPane.columnIndex="1">
                                        <children>
                                           <FontAwesomeIconView fill="#f7f7f7" glyphName="BULLSEYE" layoutX="86.0" layoutY="37.0" size="24" />
+                                          <Label layoutX="70.0" layoutY="50.0" prefHeight="27.0" prefWidth="65.0" text="users" textFill="#faf8f8">
+                                             <font>
+                                                <Font size="20.0" />
+                                             </font>
+                                          </Label>
                                        </children>
                                        <GridPane.margin>
                                           <Insets top="5.0" />
