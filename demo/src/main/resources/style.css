@@ -1,3 +1,19 @@
 .slide-menu{
    -fx-background-color:#1e1e2d;
 }
+.BACK-COLOR{
+   -fx-background-color:#363636;
+}
+.BACK-COLOR-BAR{
+   -fx-background-color:white;
+}
+.border-red{
+   -fx-background-radius:10px;
+   -fx-border-radius:10px;
+   -fx-background-color:transparent;
+   -fx-border-color:white;
+}
+.main-content{
+ -fx-background-color:#212529;
+  -fx-background-radius:10px
+}
