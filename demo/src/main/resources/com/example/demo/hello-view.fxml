@@ -139,7 +139,7 @@
                                        </GridPane.margin>
                                        <children>
                                           <FontAwesomeIconView fill="#f2efef" glyphName="CALENDAR_ALT" layoutX="86.0" layoutY="37.0" size="24" />
-                                          <Label layoutX="70.0" layoutY="50.0" prefHeight="27.0" prefWidth="65.0" text="users" textFill="#faf8f8">
+                                          <Label layoutX="52.0" layoutY="50.0" prefHeight="30.0" prefWidth="112.0" text="calendare" textFill="#faf8f8">
                                              <font>
                                                 <Font size="20.0" />
                                              </font>
