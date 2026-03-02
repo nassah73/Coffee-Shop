@@ -179,6 +179,9 @@
                      </center>
                   </BorderPane>
                </center>
+               <bottom>
+                  <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               </bottom>
             </BorderPane>
          </children>
       </HBox>
