@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+}
+.main{
+    width: 900px;
+    height: 95vh;
+    background:linear-gradient(135deg,#201c26 0%,#503d3c 40%,#000000 50%);
+    justify-self: center;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.header{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    .nav-bar ul{
+        display: flex;
+        margin-top: 10px;
+        li{
+            margin-left: 40px;
+            list-style: none;
+           
+        }
+    }
+}
