@@ -18,7 +18,7 @@
    <children>
       <ImageView opacity="0.2" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
-            <Image url="@Coffee%20cup%20and%20coffee%20beans%20on%20table%20by%20Portumen%20via%20Shutterstock.jpg" />
+            <Image url="@710116.png" />
          </image>
       </ImageView>
       <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">

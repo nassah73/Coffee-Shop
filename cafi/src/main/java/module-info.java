@@ -1,8 +1,8 @@
-module com.example.cafi {
+module cafi { // هنا خاص تكون سمية الـ Artifact اللي في الـ pom.xml
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
-    requires javafx.graphics; // ضرورية باش Stage يخدم [cite: 2025-12-30]
+    requires javafx.graphics;
 
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
@@ -13,11 +13,12 @@ module com.example.cafi {
     requires com.almasb.fxgl.all;
     requires java.sql;
 
-    // هادو هما الساروت ديال المشكل: [cite: 2025-12-30]
+    // هادو هما اللي كيسمحو لـ JavaFX يقرأ ملفات الـ FXML والـ Styles
     opens Main to javafx.graphics, javafx.fxml;
     opens control to javafx.fxml;
+
+    // بما أن الـ view عندك وسط resources، هاد السطر مهم:
     opens view to javafx.fxml;
 
-//exports com.example.cafi;
-    exports Main; // خاصنا نديرو Export للباكيج اللي فيه كلاس المشغل [cite: 2025-12-30]
+    exports Main;
 }
